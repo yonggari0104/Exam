@@ -1,0 +1,18 @@
+import pandas as pd
+import numpy as np
+import seaborn as sns
+import matplotlib.pyplot as plt
+import warnings
+warnings.filterwarnings('ignore')
+
+
+
+exam = pd.read_csv('C:\\Users\\user\\.spyder-py3\\Exam\\Exam.csv')
+
+#SEE IF NaN VALUES EXISTS
+print(exam.isna().any())
+
+print(exam.info())
+print(exam.head())
+print(exam.dtypes)
+print(exam.describe())
