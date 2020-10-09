@@ -16,3 +16,7 @@ print(exam.info())
 print(exam.head())
 print(exam.dtypes)
 print(exam.describe())
+
+print(exam.select_dtypes('object').nunique())
+
+print(exam.head())
