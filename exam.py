@@ -26,3 +26,23 @@ read_s = list(exam["reading score"])
 
 
 plt.scatter(math_s, read_s, s = 0.8)
+
+
+
+
+
+
+
+
+
+plt.subplot(1, 3, 1)
+sns.distplot(exam['math score'])
+
+plt.subplot(1, 3, 2)
+sns.distplot(exam['reading score'])
+
+plt.subplot(1, 3, 3)
+sns.distplot(exam['writing score'])
+
+plt.suptitle('Checking for Skewness', fontsize = 18)
+plt.show()
