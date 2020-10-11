@@ -20,3 +20,9 @@ print(exam.describe())
 print(exam.select_dtypes('object').nunique())
 
 print(exam.head())
+
+math_s = list(exam["math score"])
+read_s = list(exam["reading score"])
+
+
+plt.scatter(math_s, read_s, s = 0.8)
