@@ -34,7 +34,7 @@ plt.scatter(math_s, read_s, s = 0.8)
 
 
 
-
+#GRAPH OF MATH, READING, WRITING SCORES
 plt.subplot(1, 3, 1)
 sns.distplot(exam['math score'])
 
