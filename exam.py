@@ -46,3 +46,10 @@ sns.distplot(exam['writing score'])
 
 plt.suptitle('Checking for Skewness', fontsize = 18)
 plt.show()
+
+
+#FEMALE STUDENTS WITH +90 IN ALL SUBJECTS
+print(exam[(exam['gender'] == 'female') &
+     (exam['math score'] > 90) & 
+     (exam['writing score'] > 90) &
+     (exam['reading score'] > 90)])
