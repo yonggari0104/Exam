@@ -53,3 +53,8 @@ print(exam[(exam['gender'] == 'female') &
      (exam['math score'] > 90) & 
      (exam['writing score'] > 90) &
      (exam['reading score'] > 90)])
+
+
+
+#GROUP BY GENDER
+print(exam.groupby(['gender']).agg(['min','median','max']))
