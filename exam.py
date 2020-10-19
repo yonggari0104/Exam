@@ -29,7 +29,6 @@ plt.scatter(math_s, read_s, s = 0.8)
 
 
 
-#%%
 
 
 #GRAPH OF MATH, READING, WRITING SCORES
@@ -56,3 +55,7 @@ print(exam[(exam['gender'] == 'female') &
 
 #GROUP BY GENDER
 print(exam.groupby(['gender']).agg(['min','median','max']))
+
+
+#EXAM SCORES BASED ON LUNCH
+print(exam[['lunch','gender','math score','writing score','reading score']].groupby(['lunch','gender']).agg('median'))
