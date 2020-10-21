@@ -60,5 +60,5 @@ print(exam.groupby(['gender']).agg(['min','median','max']))
 #EXAM SCORES BASED ON LUNCH
 print(exam[['lunch','gender','math score','writing score','reading score']].groupby(['lunch','gender']).agg('median'))
 
-#%%
 
+#GROUP BY 
