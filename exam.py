@@ -61,4 +61,11 @@ print(exam.groupby(['gender']).agg(['min','median','max']))
 print(exam[['lunch','gender','math score','writing score','reading score']].groupby(['lunch','gender']).agg('median'))
 
 
-#GROUP BY 
+
+
+#EFFECT OF TEST PREP ON SCORES 
+print(exam[['test preparation course',
+      'gender',
+      'math score',
+      'writing score',
+      'reading score']].groupby(['test preparation course','gender']).agg('median'))
