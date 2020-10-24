@@ -69,5 +69,3 @@ print(exam[['test preparation course',
       'math score',
       'writing score',
       'reading score']].groupby(['test preparation course','gender']).agg('median'))
-
-print("Which gender is better performing?")
